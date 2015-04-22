@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><g:layoutTitle default="Grails"/></title>
+    <title><g:layoutTitle default="${meta(name:'info.app.name')}"/></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <asset:stylesheet src="application.css"/>
     <asset:javascript src="application.js"/>
@@ -13,11 +13,11 @@
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="http://grails.org">
+            <a class="navbar-brand" href="${createLink(uri: '/')}">
                 <i class="fa grails-icon">
                     <asset:image src="grails-cupsonly-logo-white.svg" alt="Grails"/>
                 </i>
-                Grails</a>
+                ${meta(name:'info.app.name')}</a>
         </div>
     </div>
 </nav>
